@@ -31,7 +31,7 @@ public class NumberAdapter extends RecyclerView.Adapter<NumberViewHolder> {
 
     void setMaxNumber(int maxNumber) {
         this.maxNumber = maxNumber;
-        notifyDataSetChanged();
+        notifyItemInserted(maxNumber);
     }
 
     int getMaxNumber() {
